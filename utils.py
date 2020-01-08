@@ -22,3 +22,4 @@ def direction(nose, anchor, w, h, mult=1):
         return 'up'
 
     return '-'
+
