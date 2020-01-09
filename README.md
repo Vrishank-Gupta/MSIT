@@ -23,8 +23,8 @@ Pre-Trained model: http://bit.do/hustlers-nsit
 ## Implementation :
 Order of Execution is as follows:
 
-1)Follow these installation guides - Numpy, OpenCV, PyAutoGUI, Dlib, Imutils and install the right versions of the libraries (mentioned above).
+1. Follow these installation guides - Numpy, OpenCV, PyAutoGUI, Dlib, Imutils and install the right versions of the libraries (mentioned above).
 
-2)Make sure you have the model downloaded. Read the README.txt file inside the model folder for the link.
+2. Make sure you have the model downloaded. Read the README.txt file inside the model folder for the link.
 
-3)python mouse-cursor-control.py
+3. python3 mouse_ctrl.py
