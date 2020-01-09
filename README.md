@@ -9,11 +9,16 @@ They will also be able to select item from the screen using facial gestures. Act
 
 ## Requirements : 
 Numpy - 1.13.3
+
 OpenCV - 3.2.0
+
 PyAutoGUI - 0.9.36
+
 Dlib - 19.4.0
+
 Imutils - 0.4.6
-Trained model: http://bit.do/hustlers-nsit
+
+Pre-Trained model: http://bit.do/hustlers-nsit
 
 ## Implementation :
 Order of Execution is as follows:
