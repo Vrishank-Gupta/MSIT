@@ -83,9 +83,9 @@ while True:
     mouthHull = cv2.convexHull(mouth)
     leftEyeHull = cv2.convexHull(leftEye)
     rightEyeHull = cv2.convexHull(rightEye)
-    cv2.drawContours(frame, [mouthHull], -1, YELLOW_COLOR, 1)
-    cv2.drawContours(frame, [leftEyeHull], -1, YELLOW_COLOR, 1)
-    cv2.drawContours(frame, [rightEyeHull], -1, YELLOW_COLOR, 1)
+    # cv2.drawContours(frame, [mouthHull], -1, YELLOW_COLOR, 1)
+    # cv2.drawContours(frame, [leftEyeHull], -1, YELLOW_COLOR, 1)
+    # cv2.drawContours(frame, [rightEyeHull], -1, YELLOW_COLOR, 1)
 
     # for (x, y) in np.concatenate((mouth, leftEye, rightEye), axis=0):
         # cv2.circle(frame, (x, y), 2, GREEN_COLOR, -1)
@@ -141,8 +141,8 @@ while True:
         nx, ny = nose_point
         w, h = 60, 35
         multiple = 1
-        # cv2.rectangle(frame, (x - w, y - h), (x + w, y + h), GREEN_COLOR, 2)
-        # cv2.line(frame, ANCHOR_POINT, nose_point, BLUE_COLOR, 2)
+        cv2.rectangle(frame, (x - w, y - h), (x + w, y + h), GREEN_COLOR, 2)
+        cv2.line(frame, ANCHOR_POINT, nose_point, BLUE_COLOR, 2)
 
         dir = direction(nose_point, ANCHOR_POINT, w, h)
         cv2.putText(frame,",", (10, 90), cv2.FONT_HERSHEY_SIMPLEX, 0.7, RED_COLOR, 2)
